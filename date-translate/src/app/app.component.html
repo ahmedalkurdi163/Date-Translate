@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="header">
+      <h2>من الميلادي إلى الهجري</h2>
+  </div>
+  <div class="content">
+    <fieldset>
+      <legend>
+       <h3>
+        التاريخ الميلادي
+       </h3>
+      </legend>
+      <div class="date-input">
+        <div>
+          <input type="text" id="day" placeholder="Day" [(ngModel)]="DateDay">
+          <label for="day">اليوم</label>
+        </div>
+        <div>
+          <input type="text" id="month"  placeholder="Month" [(ngModel)]="DateMonth">
+          <label for="month">الشهر</label>
+        </div>
+        <div>
+          <input type="text" id="year" placeholder="Year" [(ngModel)]="DateYear">
+          <label for="year">السنة</label>
+      
+        </div>
+      </div>
+      <button class="convert-button" (click)="toggleAndTranslateDate()">تحويل</button>
+    </fieldset>
+
+  </div>
+  <div class="result">
+      <table>
+        <tr>
+          <td>
+            {{convertedDay}}-{{convertedMonth}}-{{convertedYear}}
+          </td>
+          <td>التاريخ الهجري</td>
+      </tr>
+      <tr>
+        <td>
+          {{this.HijriDayName}}  
+        </td>
+          <td>اليوم</td>
+      </tr>
+      </table>
+  </div>
+</div>

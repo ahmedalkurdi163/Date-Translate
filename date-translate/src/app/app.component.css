@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    text-align: center;
+
+}
+
+.container {
+    max-width: 700px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+
+}
+.header{
+    border: 3px solid #84d5ec;
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    border-radius: 13px;
+    margin-left: 33%;
+}
+.header h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.content {
+    margin-bottom: 30px;
+}
+legend{
+    border: 3px solid #84d5ec;
+    width: 120px;
+    display: flex;
+    border-radius: 13px;
+    justify-content: center;
+    margin-left: 40% ;
+    margin-bottom: 20px;
+    background-color:#fff;
+    
+
+}
+fieldset{
+    border: 3px solid #84d5ec;
+    border-radius: 13px;
+    background-color: rgba(120, 129, 23, 0.1);
+
+}
+.date-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.date-input label {
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.date-input input {
+    width: 140px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+input:focus {
+    outline-color: #84d5ec;
+}
+.convert-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 44%;
+}
+
+.convert-button:hover {
+    background-color: #0056b3;
+}
+
+.result table {
+    border: 3px solid #84d5ec;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.result th, .result td {
+    border: 3px solid #84d5ec;
+    padding: 10px;
+    text-align: center;
+}
+.result td{
+    width: 50%;
+}
+.result th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
